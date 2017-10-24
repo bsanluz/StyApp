@@ -1,0 +1,33 @@
+<ion-view title="Closet" align-title="center" hide-back-button="true" id="page2" ng-init="recuperaDados()">
+	<ion-nav-buttons side="left" class="has-header">
+		<button class="button button-icon icon ion-images" ng-click="resgataFotos('PHOTOLIBRARY')"></button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right" class="has-header">
+		<button class="button button-icon icon ion-ios-camera" ng-click="resgataFotos('CAMERA')"></button>
+	</ion-nav-buttons>
+	<ion-content id ="lojaC" padding="true"   class="has-header" >
+		<div class="row responsive-md">
+			<div class="row" ng-repeat="image in items"  ng-if="$index % 4 === 0">
+				<div class="col col-25" on-hold="deletaFoto(items[$index].chave)" ng-click="mostraFoto(items[$index].src)" ng-if="$index < items.length">
+					<img ng-src="{{items[$index].src}}" width="100%" />
+				</div>
+				<div class="col col-25" on-hold="deletaFoto(items[$index + 1].chave)" ng-click="mostraFoto(items[$index + 1].src)" ng-if="$index + 1 < items.length">
+					<img ng-src="{{items[$index + 1].src}}"  width="100%" />
+				</div>
+				<div class="col col-25" on-hold="deletaFoto(items[$index + 2].chave)" ng-click="mostraFoto(items[$index + 2].src)" ng-if="$index + 2 < items.length">
+					<img ng-src="{{items[$index + 2].src}}" width="100%" />
+				</div>
+				<div class="col col-25" on-hold="deletaFoto(items[$index + 3].chave)" ng-click="mostraFoto(items[$index + 3].src)" ng-if="$index + 3 < items.length">
+					<img ng-src="{{items[$index + 3].src}}" width="100%" />
+				</div>
+			</div>
+			<!--modal-->
+			<script id="image-modal.html" type="text/ng-template">
+				<div class="modal image-modal transparent" ng-click="closeModal()">
+					<ion-pane class="transparent">
+						<img id="teste" ng-src="{{imageSrc}}" class="fullscreen-image"/>
+					</ion-pane>
+				</div>
+			</script>
+		</ion-content>
+	</ion-view>

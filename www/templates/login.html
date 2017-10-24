@@ -1,0 +1,30 @@
+<ion-view title="Login" hide-nav-bar="true" hide-back-button="true" id="page5">
+  <ion-content padding="true" style="background: url(img/logoApp-2.jpg) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding">
+    <div class="spacer" style="width: 300px; height: 22px;"></div>
+    <div>
+      <img src="img/QFK6A1WYSVGgECDN0tCc_123.png" style="display: block; width: 45%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="spacer" style="width: 300px; height: 22px;"></div>
+    <div class="container">
+
+
+  <form id="login-form1" class="list">
+      <ion-list id="login-list1">
+        <label class="item item-input item-stacked-label" id="login-input1">
+          <span id="emailLab" class="input-label" style="color:#B6D6EA;font-weight:600; font-size: 20px ">Email</span>
+          <input type="email" placeholder="Email" ng-model="email">
+        </label>
+        <label class="item item-input item-stacked-label" id="login-input2">
+          <span id="senhaLab" class="input-label" style="color:#B6D6EA;font-weight:600; font-size: 20px ">Senha</span>
+          <input type="password" placeholder="Senha" ng-model="senha">
+        </label>
+      </ion-list>
+      <div class="spacer" style="width: 300px; height: 13px;"></div>
+
+      <button id="login-button1" ng-click="login(email,senha)" style="font-weight:600;color:#0055AC;font-size:25px;" class="button button-light button-large button-block button-clear icon-right ion-ios-loop-strong">Logar</button>
+      <div style="margin-right:-20px;">
+        <a href="#/cadastro" id="login-button2" style="left:-10px;font-weight:500;color:#0055AC;font-size:20px;border-radius:500px 500px 500px 500px;" class="button button-light  button-full button-clear">Or create an account</a>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

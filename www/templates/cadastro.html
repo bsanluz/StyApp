@@ -1,0 +1,22 @@
+<ion-view title="Cadastro" hide-nav-bar="true"  id="page6">
+  <ion-content padding="true" style="background: url(img/logoApp-2.jpg) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding">
+    <form id="cadastro-form2" class="list">
+      <div class="spacer" style="width: 300px; height: 50px;"></div>
+      <ion-list id="cadastro-list2">
+        <label class="item item-input item-stacked-label" id="cadastro-input3">
+          <span class="input-label" style="color:#B6D6EA;font-weight:600; font-size: 20px ">Nome</span>
+          <input type="text" placeholder="Nome" ng-model="nome">
+        </label>
+        <label class="item item-input item-stacked-label" id="cadastro-input4">
+          <span class="input-label" style="color:#B6D6EA;font-weight:600; font-size: 20px ">Email</span>
+          <input type="email" placeholder="Informe um Email" ng-model="email">
+        </label>
+        <label class="item item-input item-stacked-label" id="cadastro-input5">
+          <span class="input-label" style="color:#B6D6EA;font-weight:600; font-size: 20px ">Senha</span>
+          <input type="text" placeholder="Escolha uma senha" ng-model="senha">
+        </label>
+      </ion-list>
+      <button id="cadastro-button3" style="font-weight:600;color:#0055AC;" class="button button-stable button-large button-block button-clear icon-right ion-android-person-add" ng-click="cadastro(nome,email,senha)">Cadastrar</button>
+    </form>
+  </ion-content>
+</ion-view>

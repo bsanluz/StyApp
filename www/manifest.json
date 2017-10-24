@@ -1,0 +1,11 @@
+{
+  "name": "StyApp",
+  "short_name": "StyApp",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "img/QFK6A1WYSVGgECDN0tCc_123.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

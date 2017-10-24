@@ -1,0 +1,27 @@
+<ion-view title="Detalhes" id="page7">
+  <ion-content id="lojaC" padding="true" class="has-header">
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider3" delegate-handle="slider3" id="detalhes-slider3" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+      <ion-slide-page id="detalhes-slide212" style="background:url(&quot;img/slide1.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="detalhes-slide213" style="background:url(&quot;img/slide2.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="detalhes-slide214" style="background:url(&quot;img/slide3.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+    </ion-slides>
+    <ion-list id="detalhes-list5">
+      <ion-item class="item-icon-left" id="detalhes-list-item17">
+        <i class="icon ion-bag"></i>{{valorP.titulo}}</ion-item>
+      </ion-list>
+      <ion-list id="detalhes-list6">
+        <ion-item class="item-icon-left dark" id="detalhes-list-item20">
+          <i class="icon ion-ios-pricetag"></i>{{valorP.tipo}}</ion-item>
+          <ion-item class="item-icon-left" id="detalhes-list-item18">
+            <i class="icon ion-android-call"></i>{{valorP.contato}}</ion-item>
+            <ion-item class="item-icon-left item-icon-right" id="detalhes-list-item19">
+              <i class="icon ion-location"></i>{{valorP.endereco}}
+              <div>
+                {{valorP.cidade}}
+              </div>
+              <i class="icon ion-map icon-accessory"></i>
+              <ion-option-button class="button-dark" ng-click="openMap(valorP.endereco, valorP.cidade)">Map</ion-option-button>
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-view>
